@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DailyMath30 – Daily Math Practice</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+      background: #f7f9fc;
+    }
+
+    /* Banner */
+    .banner {
+      background: linear-gradient(135deg, #ffb703, #fb8500);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .banner h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    .banner p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: #ffffff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .tab {
+      padding: 15px 25px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #333;
+      border-bottom: 3px solid transparent;
+    }
+
+    .tab.active {
+      color: #219ebc;
+      border-bottom: 3px solid #219ebc;
+    }
+
+    /* Content */
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      display: none;
+    }
+
+    .content.active {
+      display: block;
+    }
+
+    .sheet-card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .sheet-card h3 {
+      margin: 0;
+      color: #023047;
+    }
+
+    .sheet-card a {
+      background: #219ebc;
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+
+    .sheet-card a:hover {
+      background: #126782;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+	.hero-banner {
+  width: 100%;
+       height: 40vh;       /* 👈 20–30% of screen (adjust 20–30vh) */
+  overflow: hidden;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* 👈 fills area without distortion */
+  display: block;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Banner 
+  <div class="banner">
+    <h1>DailyMath30</h1>
+    <p>Future‑ready your kids with daily math practice</p>
+  </div>-->
+  
+	<div class="hero-banner">
+  <img src="banner2.png" alt="DailyMath30 Banner">
+</div>
+
+
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <div class="tab active" onclick="showGrade(2)">Grade 2</div>
+    <div class="tab" onclick="showGrade(3)">Grade 3</div>
+    <div class="tab" onclick="showGrade(4)">Grade 4</div>
+    <div class="tab" onclick="showGrade(5)">Grade 5</div>
+    <div class="tab" onclick="showGrade(6)">Grade 6</div>
+    <div class="tab" onclick="showGrade(7)">Grade 7</div>
+    <div class="tab" onclick="showGrade(8)">Grade 8</div>
+  </div>
+
+  <!-- Grade Contents -->
+  <div id="grade2" class="content active">
+    <div class="sheet-card">
+      <h3>Grade 2 – Addition Practice Sheet</h3>
+      <a href="https://drive.google.com/uc?export=download&id=1JZoQsu0OGPYia4vTl0t3evxkQsMAo_qW">Download</a>
+    </div>
+	 <div class="sheet-card">
+      <h3>Grade 2 – Subtraction Practice Sheet</h3>
+      <a href="https://drive.google.com/uc?export=download&id=1JZoQsu0OGPYia4vTl0t3evxkQsMAo_qW">Download</a>
+    </div>
+	 <div class="sheet-card">
+      <h3>Grade 2 – Multiplication Practice Sheet</h3>
+      <a href="https://drive.google.com/uc?export=download&id=1JZoQsu0OGPYia4vTl0t3evxkQsMAo_qW">Download</a>
+    </div>
+  </div>
+
+  <div id="grade3" class="content">
+    <div class="sheet-card">
+      <h3>Grade 3 – Addition Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	<div class="sheet-card">
+      <h3>Grade 3 – Subtraction Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	<div class="sheet-card">
+      <h3>Grade 3 – Multiplication Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	<div class="sheet-card">
+      <h3>Grade 3 – Division Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+  </div>
+
+  <div id="grade4" class="content">
+    <div class="sheet-card">
+      <h3>Grade 4 – Basic Calculation Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	 <div class="sheet-card">
+      <h3>Grade 4 – Advance Calculation Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	 <div class="sheet-card">
+      <h3>Grade 4 – Fractions Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	 <div class="sheet-card">
+      <h3>Grade 4 – Decimals Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+  </div>
+
+  <div id="grade5" class="content">
+    <div class="sheet-card">
+      <h3>Grade 5 – Advance Calculation Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	<div class="sheet-card">
+      <h3>Grade 5 – Fractions Add/Subtract Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	<div class="sheet-card">
+      <h3>Grade 5 – Fractions Multiply/Divide Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	<div class="sheet-card">
+      <h3>Grade 5 – Decimals Calculation Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+  </div>
+
+  <div id="grade6" class="content">
+    <div class="sheet-card">
+      <h3>Grade 6 – Fractions Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	<div class="sheet-card">
+      <h3>Grade 6 – Decimals Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	<div class="sheet-card">
+      <h3>Grade 6 – Factoring Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	<div class="sheet-card">
+      <h3>Grade 6 – BEDMAS Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+  </div>
+
+  <div id="grade7" class="content">
+    <div class="sheet-card">
+      <h3>Grade 7 – BEDMAS Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	 <div class="sheet-card">
+      <h3>Grade 7 – Fractions BEDMAS Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	 <div class="sheet-card">
+      <h3>Grade 7 – Percentage Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	 <div class="sheet-card">
+      <h3>Grade 7 – Word Problem Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+  </div>
+
+  <div id="grade8" class="content">
+    <div class="sheet-card">
+      <h3>Grade 8 – Algebra Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	<div class="sheet-card">
+      <h3>Grade 8 – Exponents Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	<div class="sheet-card">
+      <h3>Grade 8 – Proportions Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+	<div class="sheet-card">
+      <h3>Grade 8 – Probability Practice Sheet</h3>
+      <a href="#">Download</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 DailyMath30 | Personalized Daily Math Practice
+  </footer>
+
+  <script>
+    function showGrade(grade) {
+      document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+
+      document.getElementById('grade' + grade).classList.add('active');
+      document.querySelectorAll('.tab')[grade - 2].classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
