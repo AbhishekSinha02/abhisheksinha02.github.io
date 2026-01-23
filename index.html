@@ -101,16 +101,17 @@
       color: #666;
       font-size: 0.9rem;
     }
-	.hero-banner {
+.hero-banner {
   width: 100%;
-       height: 35vh;       /* 👈 20–30% of screen (adjust 20–30vh) */
+  height: 200px;        /* visible height */
   overflow: hidden;
 }
 
 .hero-banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;      /* 👈 fills area without distortion */
+  object-fit: cover;
+  object-position: center 40%;  /* shift vertical focus down */
   display: block;
 }
 
