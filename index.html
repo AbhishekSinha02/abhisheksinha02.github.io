@@ -101,22 +101,17 @@
       color: #666;
       font-size: 0.9rem;
     }
-.hero-banner {
+	.hero-banner {
   width: 100%;
-  height: 220px;         /* reduce height to a slimmer banner */
+       height: 40vh;       /* 👈 20–30% of screen (adjust 20–30vh) */
   overflow: hidden;
-  text-align: center;
 }
 
 .hero-banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center 40%;
+  object-fit: cover;      /* 👈 fills area without distortion */
   display: block;
-  /* optional: remove or reduce scaling to fill better */
-  transform: scale(0.9);  /* try 0.9 or remove this line */
-  margin: 0;
 }
 
   </style>
