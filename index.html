@@ -103,7 +103,7 @@
     }
 .hero-banner {
   width: 100%;
-  height: 360px;
+  height: 220px;         /* reduce height to a slimmer banner */
   overflow: hidden;
   text-align: center;
 }
@@ -114,8 +114,9 @@
   object-fit: cover;
   object-position: center 40%;
   display: block;
-  transform: scale(0.8);
-  margin: 0 auto;
+  /* optional: remove or reduce scaling to fill better */
+  transform: scale(0.9);  /* try 0.9 or remove this line */
+  margin: 0;
 }
 
   </style>
